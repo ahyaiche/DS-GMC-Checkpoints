@@ -1,4 +1,3 @@
-```sql
 ## customers table has a “primary key” column customer_id, and the name, email, and address columns are all defined as “VARCHAR” with different maximum lengths and each is 
 #marked as “NOT NULL”.
 ## products table has a “primary key” column product_id, and the name and price columns are defined as “VARCHAR” and “DECIMAL” respectively, 
@@ -48,4 +47,3 @@ CREATE TABLE orders (
 desc customers;    
 desc products;
 desc orders;
-```
