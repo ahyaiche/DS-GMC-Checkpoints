@@ -14,8 +14,7 @@ use gmc_vh;
 # 2.Create customers table
 CREATE TABLE customers (
     customer_id VARCHAR(20) NOT NULL,
-    customers_name VARCHAR(20) NOT NULL,
-    email VARCHAR(30) NOT NULL,
+    name VARCHAR(20) NOT NULL,
     adress VARCHAR(50) NOT NULL,
     PRIMARY KEY (customer_id)
 );
@@ -23,7 +22,7 @@ CREATE TABLE customers (
 # 3. Create products table
 CREATE TABLE products (
     product_id VARCHAR(20),
-    products_name VARCHAR(20) NOT NULL,
+    name VARCHAR(20) NOT NULL,
     price DECIMAL NOT NULL,
     CONSTRAINT price CHECK (price > 0),
     PRIMARY KEY (product_id)
