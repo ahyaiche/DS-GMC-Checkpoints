@@ -1,4 +1,3 @@
 streamlit==1.18.1
 scikit-learn==1.2.1
-sklearn==0.0.post1
-pandas @ file:///C:/b/abs_b9kefbuby2/croot/pandas_1677835593760/work
+pandas==1.3.3
