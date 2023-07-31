@@ -68,8 +68,8 @@ def chatbot(question):
 # Prompt the user for a question, call the chatbot() function to get the response, and display it on the screen.
 # Create a Streamlit app
 def main():
-    st.title("Chatbot")
-    st.write("Hello! I'm a chatbot. Ask me anything about the topic in the text file.")
+    st.title("Pride and Prejudice Chatbot")
+    st.write("Hello! I'm a chatbot. Ask me anything about Pride and Prejudice Novel.")
     # Get the user's question
     question = st.text_input("Question:")
     # Create a button to submit the question
