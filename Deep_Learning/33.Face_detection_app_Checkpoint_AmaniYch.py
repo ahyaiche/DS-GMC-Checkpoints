@@ -1,13 +1,4 @@
 # Checkpoint Objective: Improving the Streamlit app for face detection using Viola-Jones algorithm of the example of the content
-
-Add instructions to the Streamlit app interface to guide the user on how to use the app.
-Add a feature to save the images with detected faces on the user's device.
-Add a feature to allow the user to choose the color of the rectangles drawn around the detected faces.
-Add a feature to adjust the minNeighbors parameter in the face_cascade.detectMultiScale() function.
-Add a feature to adjust the scaleFactor parameter in the face_cascade.detectMultiScale() function.
-
-
-
 import streamlit as st
 import cv2
 import numpy as np
