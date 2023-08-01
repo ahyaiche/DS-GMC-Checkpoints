@@ -4,7 +4,7 @@ import pandas as pd
 import joblib
 
 # Load the trained model from the .h5 file
-model = joblib.load('COVID_19_model.h5')
+model = joblib.load('D:\DataScience\CheckPoints\DS-GMC-Checkpoints\API_Streamlit\COVID_19_model.h5')
 
 # Streamlit app header and description
 st.title("COVID-19 Death Prediction")
