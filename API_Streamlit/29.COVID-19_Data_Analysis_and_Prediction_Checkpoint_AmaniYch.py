@@ -1,10 +1,27 @@
 # Import libraries
+import requests
+import joblib
 import streamlit as st
 import pandas as pd
-import joblib
 
 # Load the trained model from the .h5 file
-model = joblib.load('D:\DataScience\CheckPoints\DS-GMC-Checkpoints\API_Streamlit\COVID_19_model.h5')
+# URL of the model file on GitHub
+model_url = 'https://github.com/ahyaiche/DS-GMC-Checkpoints/raw/main/API_Streamlit/COVID_19_model.h5'
+
+# Function to download the model file
+def download_model(url, save_path):
+    response = requests.get(url)
+    with open(save_path, 'wb') as f:
+        f.write(response.content)
+
+# Local file path to save the downloaded model
+local_model_path = 'COVID_19_model.h5'
+
+# Download the model file from the GitHub URL
+download_model(model_url, local_model_path)
+
+# Load the trained model from the downloaded file
+model = joblib.load(local_model_path)
 
 # Streamlit app header and description
 st.title("COVID-19 Death Prediction")
