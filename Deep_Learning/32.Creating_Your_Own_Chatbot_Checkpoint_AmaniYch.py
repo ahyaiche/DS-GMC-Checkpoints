@@ -3,6 +3,7 @@ import requests
 import nltk
 nltk.download('wordnet')
 nltk.download('punkt')
+nltk.download('stopwords')
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
