@@ -82,3 +82,6 @@ def main():
         st.text(response)
 if __name__ == "__main__":
     main()
+
+# Here's the link to the app
+# https://ds-gmc-checkpoints-5sjxtceuix2hfejujoppqc.streamlit.app/
